@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             StringRequest stringRequest = new StringRequest(Request.Method.GET, tempUrl, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
-                    Log.i("response", response);
+//                    Log.i("response", response);
                     String output = "";
                     try {
                         JSONObject jsonObject = new JSONObject(response);
@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                             + "\nTempeture: " + df.format(temp) + " C\nFeel like: " + df.format(feelLikes).toString() + "\nDescription: "
                             + description + "\nPressure: " + pressure + " hPa\nHumidity: " + humidity
                             + " %\nWind speed: " + wind + " m/s\nClould: " + clouds + " %";
-                        Log.i("response", output);
+//                        Log.i("response", output);
                         tv_result.setText(output);
                     } catch (JSONException e){
                         e.printStackTrace();
