@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                         String countryName = sys.getString("country");
                         String cityName = jsonObject.getString("name");
                         output += "Current weather of " + cityName + " (" + countryName + ")"
-                            + "\nTempeture: " + df.format(temp) + " C\nFeel like: " + df.format(feelLikes).toString() + "\nDescription: "
+                            + "\nTempeture: " + df.format(temp) + " ℃\nFeel like: " + df.format(feelLikes) + " ℃\nDescription: "
                             + description + "\nPressure: " + pressure + " hPa\nHumidity: " + humidity
                             + " %\nWind speed: " + wind + " m/s\nClould: " + clouds + " %";
 //                        Log.i("response", output);
